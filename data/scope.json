@@ -1,0 +1,418 @@
+{
+  "source": "NájemAI corpus artifact, labeled 2026-10-28 against the official e-Sbírka text",
+  "rule": "drop only provisions that cannot answer a tenant question (úvodní ustanovení, účinnost, přechodná ustanovení)",
+  "paragraphs": {
+    "nv308/par_1": {
+      "label": "drop",
+      "note": "Úvodní ustanovení."
+    },
+    "nv308/par_2": {
+      "label": "keep"
+    },
+    "nv308/par_3": {
+      "label": "keep"
+    },
+    "nv308/par_4": {
+      "label": "keep"
+    },
+    "nv308/par_5": {
+      "label": "keep"
+    },
+    "nv308/par_6": {
+      "label": "keep"
+    },
+    "nv308/par_7": {
+      "label": "drop",
+      "note": "Účinnost."
+    },
+    "osr/par_114b": {
+      "label": "keep"
+    },
+    "osr/par_172": {
+      "label": "keep"
+    },
+    "osr/par_173": {
+      "label": "keep",
+      "note": "Referred to by § 175a odst. 4."
+    },
+    "osr/par_174": {
+      "label": "keep"
+    },
+    "osr/par_175a": {
+      "label": "keep"
+    },
+    "osr/par_195": {
+      "label": "keep"
+    },
+    "osr/par_196": {
+      "label": "keep"
+    },
+    "oz/par_2201": {
+      "label": "keep"
+    },
+    "oz/par_2202": {
+      "label": "keep"
+    },
+    "oz/par_2203": {
+      "label": "keep",
+      "note": "Niche (nájem v katastru), but valid."
+    },
+    "oz/par_2204": {
+      "label": "keep"
+    },
+    "oz/par_2205": {
+      "label": "keep"
+    },
+    "oz/par_2206": {
+      "label": "keep"
+    },
+    "oz/par_2207": {
+      "label": "keep",
+      "note": "Who does maintenance and repairs; core."
+    },
+    "oz/par_2208": {
+      "label": "keep"
+    },
+    "oz/par_2209": {
+      "label": "keep"
+    },
+    "oz/par_2210": {
+      "label": "keep"
+    },
+    "oz/par_2211": {
+      "label": "keep"
+    },
+    "oz/par_2212": {
+      "label": "keep"
+    },
+    "oz/par_2213": {
+      "label": "keep"
+    },
+    "oz/par_2214": {
+      "label": "keep"
+    },
+    "oz/par_2215": {
+      "label": "keep"
+    },
+    "oz/par_2216": {
+      "label": "keep"
+    },
+    "oz/par_2217": {
+      "label": "keep"
+    },
+    "oz/par_2218": {
+      "label": "keep",
+      "note": "Default rule for when rent is due (měsíčně pozadu)."
+    },
+    "oz/par_2219": {
+      "label": "keep"
+    },
+    "oz/par_2220": {
+      "label": "keep"
+    },
+    "oz/par_2221": {
+      "label": "keep"
+    },
+    "oz/par_2222": {
+      "label": "keep"
+    },
+    "oz/par_2223": {
+      "label": "keep"
+    },
+    "oz/par_2224": {
+      "label": "keep"
+    },
+    "oz/par_2225": {
+      "label": "keep"
+    },
+    "oz/par_2226": {
+      "label": "keep"
+    },
+    "oz/par_2227": {
+      "label": "keep"
+    },
+    "oz/par_2228": {
+      "label": "keep"
+    },
+    "oz/par_2229": {
+      "label": "keep"
+    },
+    "oz/par_2230": {
+      "label": "keep"
+    },
+    "oz/par_2231": {
+      "label": "keep"
+    },
+    "oz/par_2232": {
+      "label": "keep"
+    },
+    "oz/par_2233": {
+      "label": "keep"
+    },
+    "oz/par_2234": {
+      "label": "keep"
+    },
+    "oz/par_2235": {
+      "label": "keep",
+      "note": "Defines when the nájem bytu rules apply; odst. 2 = short-term rental exception."
+    },
+    "oz/par_2236": {
+      "label": "keep"
+    },
+    "oz/par_2237": {
+      "label": "keep"
+    },
+    "oz/par_2238": {
+      "label": "keep"
+    },
+    "oz/par_2239": {
+      "label": "keep",
+      "note": "Zakázaná ujednání; only OZ § changed in 2026 (odst. 2), date-sensitive test."
+    },
+    "oz/par_2242": {
+      "label": "keep"
+    },
+    "oz/par_2243": {
+      "label": "keep"
+    },
+    "oz/par_2244": {
+      "label": "keep"
+    },
+    "oz/par_2245": {
+      "label": "keep"
+    },
+    "oz/par_2246": {
+      "label": "keep"
+    },
+    "oz/par_2247": {
+      "label": "keep"
+    },
+    "oz/par_2248": {
+      "label": "keep"
+    },
+    "oz/par_2249": {
+      "label": "keep"
+    },
+    "oz/par_2250": {
+      "label": "keep"
+    },
+    "oz/par_2251": {
+      "label": "keep"
+    },
+    "oz/par_2252": {
+      "label": "keep"
+    },
+    "oz/par_2253": {
+      "label": "keep"
+    },
+    "oz/par_2254": {
+      "label": "keep"
+    },
+    "oz/par_2255": {
+      "label": "keep"
+    },
+    "oz/par_2256": {
+      "label": "keep"
+    },
+    "oz/par_2257": {
+      "label": "keep"
+    },
+    "oz/par_2258": {
+      "label": "keep"
+    },
+    "oz/par_2259": {
+      "label": "keep"
+    },
+    "oz/par_2260": {
+      "label": "keep"
+    },
+    "oz/par_2261": {
+      "label": "keep"
+    },
+    "oz/par_2262": {
+      "label": "keep"
+    },
+    "oz/par_2263": {
+      "label": "keep"
+    },
+    "oz/par_2264": {
+      "label": "keep"
+    },
+    "oz/par_2265": {
+      "label": "keep"
+    },
+    "oz/par_2266": {
+      "label": "keep"
+    },
+    "oz/par_2267": {
+      "label": "keep"
+    },
+    "oz/par_2268": {
+      "label": "keep"
+    },
+    "oz/par_2269": {
+      "label": "keep"
+    },
+    "oz/par_2270": {
+      "label": "keep"
+    },
+    "oz/par_2271": {
+      "label": "keep"
+    },
+    "oz/par_2272": {
+      "label": "keep"
+    },
+    "oz/par_2273": {
+      "label": "keep"
+    },
+    "oz/par_2274": {
+      "label": "keep"
+    },
+    "oz/par_2275": {
+      "label": "keep"
+    },
+    "oz/par_2276": {
+      "label": "keep"
+    },
+    "oz/par_2277": {
+      "label": "keep"
+    },
+    "oz/par_2278": {
+      "label": "keep"
+    },
+    "oz/par_2279": {
+      "label": "keep"
+    },
+    "oz/par_2280": {
+      "label": "keep"
+    },
+    "oz/par_2281": {
+      "label": "keep"
+    },
+    "oz/par_2282": {
+      "label": "keep"
+    },
+    "oz/par_2282a": {
+      "label": "keep"
+    },
+    "oz/par_2283": {
+      "label": "keep"
+    },
+    "oz/par_2284": {
+      "label": "keep"
+    },
+    "oz/par_2285": {
+      "label": "keep"
+    },
+    "oz/par_2286": {
+      "label": "keep"
+    },
+    "oz/par_2287": {
+      "label": "keep"
+    },
+    "oz/par_2288": {
+      "label": "keep"
+    },
+    "oz/par_2289": {
+      "label": "keep"
+    },
+    "oz/par_2290": {
+      "label": "keep"
+    },
+    "oz/par_2291": {
+      "label": "keep"
+    },
+    "oz/par_2292": {
+      "label": "keep"
+    },
+    "oz/par_2293": {
+      "label": "keep"
+    },
+    "oz/par_2294": {
+      "label": "keep",
+      "note": "Fixtures attached to the flat."
+    },
+    "oz/par_2295": {
+      "label": "keep"
+    },
+    "oz/par_2296": {
+      "label": "keep"
+    },
+    "oz/par_2297": {
+      "label": "keep",
+      "note": "Niche (služební byt), but valid."
+    },
+    "oz/par_2298": {
+      "label": "keep"
+    },
+    "oz/par_2299": {
+      "label": "keep"
+    },
+    "oz/par_2300": {
+      "label": "keep"
+    },
+    "oz/par_2301": {
+      "label": "keep"
+    },
+    "z67/par_1": {
+      "label": "keep"
+    },
+    "z67/par_2": {
+      "label": "keep"
+    },
+    "z67/par_3": {
+      "label": "keep"
+    },
+    "z67/par_4": {
+      "label": "keep"
+    },
+    "z67/par_5": {
+      "label": "keep"
+    },
+    "z67/par_6": {
+      "label": "keep"
+    },
+    "z67/par_7": {
+      "label": "keep"
+    },
+    "z67/par_8": {
+      "label": "keep"
+    },
+    "z67/par_8a": {
+      "label": "keep"
+    },
+    "z67/par_8b": {
+      "label": "keep"
+    },
+    "z67/par_9": {
+      "label": "keep"
+    },
+    "z67/par_9a": {
+      "label": "keep"
+    },
+    "z67/par_10": {
+      "label": "keep",
+      "note": "Extends the rules to houses divided into units without an SVJ."
+    },
+    "z67/par_11": {
+      "label": "keep"
+    },
+    "z67/par_12": {
+      "label": "keep"
+    },
+    "z67/par_13": {
+      "label": "keep"
+    },
+    "z67/par_14": {
+      "label": "drop",
+      "note": "Přechodná ustanovení from 2013."
+    },
+    "z67/par_14a": {
+      "label": "keep"
+    },
+    "z67/par_15": {
+      "label": "drop",
+      "note": "Účinnost."
+    }
+  }
+}
