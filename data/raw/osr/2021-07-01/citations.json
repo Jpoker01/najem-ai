@@ -1,0 +1,7 @@
+
+{ "head": { "link": [], "vars": ["cit", "f"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "cit": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#string", "value": "\u00A7 172" }	, "f": { "type": "uri", "value": "https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_172" }},
+    { "cit": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#string", "value": "\u00A7 173" }	, "f": { "type": "uri", "value": "https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_173" }},
+    { "cit": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#string", "value": "\u00A7 174" }	, "f": { "type": "uri", "value": "https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_174" }},
+    { "cit": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#string", "value": "\u00A7 114b" }	, "f": { "type": "uri", "value": "https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_1/par_114b" }} ] } }

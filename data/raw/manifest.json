@@ -1,0 +1,602 @@
+{
+ "oz/versions.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?version ?valid_from ?kind WHERE {\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89> <https://slovník.gov.cz/datový/sbírka/pojem/má-znění> ?version .\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/účinnost-znění-od> ?valid_from }\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-znění-právního-aktu> ?kind } }",
+  "fetched_at": "2026-10-28T09:23:19+00:00",
+  "sha256": "0ac671f493e6afde54d320f420185ee56d731b8f42fd765eb97ab5644bd9aca0"
+ },
+ "oz/2021-07-01/pododdil_1.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:20+00:00",
+  "sha256": "d5b6a06f475186cd202a98a051274843acdd6532e50e0be0ccf0b7ef0737128f"
+ },
+ "oz/2021-07-01/pododdil_1.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:20+00:00",
+  "sha256": "bde10ef6005476b86fe0c39e13ddf3c6722c48dc93e59a5986495530bed1391f"
+ },
+ "oz/2021-07-01/pododdil_1.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:20+00:00",
+  "sha256": "e8f55c6e8746717f5101a86bd6bcfeeffe7846aecc1f23cf25138081801e3e57"
+ },
+ "oz/2021-07-01/pododdil_1.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:20+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "oz/2021-07-01/pododdil_2.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:20+00:00",
+  "sha256": "e7619d08f5775f3990d388697113d0dc74ea7b8c7b3c44bcbb819a97f7c65c27"
+ },
+ "oz/2021-07-01/pododdil_2.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:20+00:00",
+  "sha256": "125e0b224fc6653d84fed3f8abfa99c635cdc3de9cf07fb3c90549b9aa162527"
+ },
+ "oz/2021-07-01/pododdil_2.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:21+00:00",
+  "sha256": "bda615aafc3408954c361977e24d1f34286584ed3375f047ca3198c64b017937"
+ },
+ "oz/2021-07-01/pododdil_2.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2021-07-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:21+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "oz/2026-01-01/pododdil_1.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:21+00:00",
+  "sha256": "cad686263f2ee62958303c32e618f3fdd5eeea152796039b092d2c79cb013d97"
+ },
+ "oz/2026-01-01/pododdil_1.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:21+00:00",
+  "sha256": "ca9e10f51ddce20186d76888ebf48bedaf2bf6e86a2dbf8d4a3a8efd0f30d217"
+ },
+ "oz/2026-01-01/pododdil_1.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:21+00:00",
+  "sha256": "cdedf776ad7036852b81f5c6a62adcc25e0577c23bcbeea247dd1fa208f123ed"
+ },
+ "oz/2026-01-01/pododdil_1.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_1> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:22+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "oz/2026-01-01/pododdil_2.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:22+00:00",
+  "sha256": "a2442574123049caa2c837665cde4eb7746cfaa76f4ab3f2269fbe80cb043c4b"
+ },
+ "oz/2026-01-01/pododdil_2.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:23+00:00",
+  "sha256": "940a9329b7edab99f6f40798bea2704010eccda1d24e6c2d48e555410a5cad6e"
+ },
+ "oz/2026-01-01/pododdil_2.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:23+00:00",
+  "sha256": "f3c9fc3df0ce0f9881f256acc17d70cc1409a35fad74da0d2430d02d28d6ab44"
+ },
+ "oz/2026-01-01/pododdil_2.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2012/89/2026-01-01/dokument/norma/cast_4/hlava_2/dil_2/oddil_3/pododdil_2> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:24+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "nv308/versions.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?version ?valid_from ?kind WHERE {\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308> <https://slovník.gov.cz/datový/sbírka/pojem/má-znění> ?version .\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/účinnost-znění-od> ?valid_from }\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-znění-právního-aktu> ?kind } }",
+  "fetched_at": "2026-10-28T09:23:24+00:00",
+  "sha256": "7b1bc0c9974fe813dbc2dd69833493d6f7f8b5a852b301898e80a25e10fb7560"
+ },
+ "nv308/2016-01-01/norma.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2016-01-01/dokument/norma> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:24+00:00",
+  "sha256": "ad119ca6d07d762ac874d3d15dc6097877623aaf1c8ec39ddb93e1e81dad88df"
+ },
+ "nv308/2016-01-01/norma.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2016-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:24+00:00",
+  "sha256": "9e245d7e83c1e027cebbcb178f184de4f3f377651f02a54cfcb5e52b11427458"
+ },
+ "nv308/2016-01-01/norma.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2016-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:24+00:00",
+  "sha256": "04e5dd48bd61e47d3a396e6f4b3bb8b100ddedd8ff97a068f2ea59469f649541"
+ },
+ "nv308/2016-01-01/norma.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2016-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:24+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "nv308/2026-01-01/norma.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2026-01-01/dokument/norma> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:25+00:00",
+  "sha256": "a6eb670f10f66f39c0f62457d989db4b06716890029795a284762ee73313a7fe"
+ },
+ "nv308/2026-01-01/norma.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2026-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:25+00:00",
+  "sha256": "04f45e4e3f993a53e98c7a72ea4111b0e3c4bfd068809e4f38ee93a418aa7a87"
+ },
+ "nv308/2026-01-01/norma.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2026-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:25+00:00",
+  "sha256": "b9f1eea62fbc48036faf32f23e8d6ea7b4f3de10ac58fb37dc6e6ff7933ae231"
+ },
+ "nv308/2026-01-01/norma.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2015/308/2026-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:25+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "z67/versions.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?version ?valid_from ?kind WHERE {\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67> <https://slovník.gov.cz/datový/sbírka/pojem/má-znění> ?version .\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/účinnost-znění-od> ?valid_from }\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-znění-právního-aktu> ?kind } }",
+  "fetched_at": "2026-10-28T09:23:25+00:00",
+  "sha256": "d693ee1167d63f76612916446db90b194b7a07fe81a6b85ec742cc7c87ee811a"
+ },
+ "z67/2020-07-01/norma.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2020-07-01/dokument/norma> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:26+00:00",
+  "sha256": "8a610328504d37d0984dabf640ca5975232f4f5088e96c556fec2e1c33165187"
+ },
+ "z67/2020-07-01/norma.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2020-07-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:26+00:00",
+  "sha256": "acd3bf845b533b26f4f3c79cb55cd3d13ebf74758ef4b43c640dfe28be636919"
+ },
+ "z67/2020-07-01/norma.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2020-07-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:26+00:00",
+  "sha256": "87dc57740e7b0838d77cc1305d5b204c8d824141f1c852096aee45186875a2c4"
+ },
+ "z67/2020-07-01/norma.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2020-07-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:26+00:00",
+  "sha256": "0a9e6678321baf126145b683dd8d38cfdba133c2a8891c630b1017e418710485"
+ },
+ "z67/2020-07-01/norma.d5.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2020-07-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 . ?x4 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x3 .\n  BIND(?x4 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:26+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "z67/2023-01-01/norma.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2023-01-01/dokument/norma> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:26+00:00",
+  "sha256": "bf4521c1651ead832c3c285776df32acd9151a285a673df460087364995befe5"
+ },
+ "z67/2023-01-01/norma.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2023-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:27+00:00",
+  "sha256": "4b94176654d1c3dd1abbaf81e54967d555b93ba3852e3a84045614a1e7913701"
+ },
+ "z67/2023-01-01/norma.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2023-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:27+00:00",
+  "sha256": "c1a0df315b23a09137ea9366044cc616d6b00b85e68619645c385ca92806f649"
+ },
+ "z67/2023-01-01/norma.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2023-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:27+00:00",
+  "sha256": "25f6755062987c7a327e5244b435e1e8977a2070f974709237aa4d5246816d1a"
+ },
+ "z67/2023-01-01/norma.d5.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2023-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 . ?x4 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x3 .\n  BIND(?x4 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:27+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "z67/2024-01-01/norma.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2024-01-01/dokument/norma> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:27+00:00",
+  "sha256": "fed37c5ad54e2784a4c2c3cad99299b4065bf45aace70af70cd0f3870a802bfa"
+ },
+ "z67/2024-01-01/norma.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2024-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:27+00:00",
+  "sha256": "23a23d9c2014664025392520c504d36616eb4cb62a2482eecabf8c8a09b37e0e"
+ },
+ "z67/2024-01-01/norma.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2024-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:28+00:00",
+  "sha256": "f834e925b739deb6edd54542aeac2dd2487a7150e630cb2b585befa73779889c"
+ },
+ "z67/2024-01-01/norma.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2024-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:28+00:00",
+  "sha256": "0daf9d69501f494eefb1f044a79d67c45755b32e96c4433884ef361345f9f494"
+ },
+ "z67/2024-01-01/norma.d5.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2024-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 . ?x4 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x3 .\n  BIND(?x4 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:28+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "z67/2026-01-01/norma.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2026-01-01/dokument/norma> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:28+00:00",
+  "sha256": "5f662e78250f1117d0fbb3dbde27b72c550b027bd81a5d6fe277f696ddea8161"
+ },
+ "z67/2026-01-01/norma.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2026-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:29+00:00",
+  "sha256": "0f8fc2d9e5e6289a5d833b04198866d6d39f4fbee1f90c71c24d28ee1f1597e0"
+ },
+ "z67/2026-01-01/norma.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2026-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:29+00:00",
+  "sha256": "9f19afa0eba5617a96453c265e6ec39168bf2658ef0f2f6196336f8202968ac8"
+ },
+ "z67/2026-01-01/norma.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2026-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:29+00:00",
+  "sha256": "faed2adae159202052b0c747c03f25e9de9bfc90de73982a0f5c0fd6d1d15dac"
+ },
+ "z67/2026-01-01/norma.d5.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2026-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 . ?x4 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x3 .\n  BIND(?x4 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:29+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "z67/2027-01-01/norma.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2027-01-01/dokument/norma> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:29+00:00",
+  "sha256": "fac8406b1d98dc72a109c69fb47c687664bf5d9dafc160336d0c14aaaa5e2e0d"
+ },
+ "z67/2027-01-01/norma.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2027-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:30+00:00",
+  "sha256": "5c7653397d696884764101daa83bd674950f55f45c48b6e68bb9c76dde4ae5fc"
+ },
+ "z67/2027-01-01/norma.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2027-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:30+00:00",
+  "sha256": "c421f5dd82bda5133ab582ab3c8910db54bf8ce6edad2bb2653c449fb9820675"
+ },
+ "z67/2027-01-01/norma.d4.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2027-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 .\n  BIND(?x3 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:30+00:00",
+  "sha256": "62bc63b7067364f09759ba5f6c834c3ec9f2087224edaa18043ec50c95aa13a9"
+ },
+ "z67/2027-01-01/norma.d5.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/2013/67/2027-01-01/dokument/norma> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 . ?x3 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x2 . ?x4 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x3 .\n  BIND(?x4 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:30+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/versions.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?version ?valid_from ?kind WHERE {\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99> <https://slovník.gov.cz/datový/sbírka/pojem/má-znění> ?version .\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/účinnost-znění-od> ?valid_from }\n  OPTIONAL { ?version <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-znění-právního-aktu> ?kind } }",
+  "fetched_at": "2026-10-28T09:23:30+00:00",
+  "sha256": "cd5faae7f6328002453aa975448c462dd14e3c7140caa00bc0f5693e995c85c4"
+ },
+ "osr/2021-07-01/citations.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?cit ?f WHERE {\n  VALUES ?cit { \"§ 114b\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 172\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 173\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 174\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 175a\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 195\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 196\"^^<http://www.w3.org/2001/XMLSchema#string> }\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01> <https://slovník.gov.cz/datový/sbírka/pojem/má-fragment-znění> ?f .\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }",
+  "fetched_at": "2026-10-28T09:23:31+00:00",
+  "sha256": "9763c062a17718dd63fdab68e41fa5e4b92a6c32e4bca11295852b48e6fbd3aa"
+ },
+ "osr/2021-07-01/par_172.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_172> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:31+00:00",
+  "sha256": "00942761af6ff07d7f29b4dcf15ec8106d348cf42387604c0b92fa3bb5c6df9e"
+ },
+ "osr/2021-07-01/par_172.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:31+00:00",
+  "sha256": "aaa387338f4befedb72d3635a1eada0afecc98ac408f33dffc95f2edd06af708"
+ },
+ "osr/2021-07-01/par_172.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:31+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2021-07-01/par_173.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_173> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:31+00:00",
+  "sha256": "bfca3ad3fcf90858cb1a0e4ad11c2d4a36f55c9aa8af060d0fdb487c74e194dc"
+ },
+ "osr/2021-07-01/par_173.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_173> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:32+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2021-07-01/par_174.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_174> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:32+00:00",
+  "sha256": "4953c0a8ea9f7c684338e0bf2337c8c492fb518edfbf6e943b97ed4190bb9c3a"
+ },
+ "osr/2021-07-01/par_174.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_4/par_174> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:32+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2021-07-01/par_114b.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_1/par_114b> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:32+00:00",
+  "sha256": "ec2b6bbc705c018f30d7fd886bce6a3b3703c2d59c21c387a4496fb7e7d87101"
+ },
+ "osr/2021-07-01/par_114b.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2021-07-01/dokument/norma/cast_3/hlava_1/par_114b> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:32+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2024-07-01/citations.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?cit ?f WHERE {\n  VALUES ?cit { \"§ 114b\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 172\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 173\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 174\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 175a\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 195\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 196\"^^<http://www.w3.org/2001/XMLSchema#string> }\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01> <https://slovník.gov.cz/datový/sbírka/pojem/má-fragment-znění> ?f .\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }",
+  "fetched_at": "2026-10-28T09:23:32+00:00",
+  "sha256": "6a0e2f16db0c637ddbc183665bccd049133fd76539eb9d8ddcd1d95608062531"
+ },
+ "osr/2024-07-01/par_172.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_4/par_172> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:33+00:00",
+  "sha256": "d31c1cc9dc0a8fcaf682a5d83c7658ab4e0232775f91f8d1ff648f1b22fd2701"
+ },
+ "osr/2024-07-01/par_172.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:33+00:00",
+  "sha256": "3112a62c99434ffea27a028607440da5fc1bd495d5efd74c49934f4271a9801f"
+ },
+ "osr/2024-07-01/par_172.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:33+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2024-07-01/par_173.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_4/par_173> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:33+00:00",
+  "sha256": "565ad0a436539ca26a590499a7a0eab6caf9d114bc07908b5148593a45433e13"
+ },
+ "osr/2024-07-01/par_173.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_4/par_173> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:34+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2024-07-01/par_174.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_4/par_174> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:34+00:00",
+  "sha256": "438fe7bce7b64de8ad15eff6fcf82a39c4ccff3d2884050d259a2a71a505009d"
+ },
+ "osr/2024-07-01/par_174.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_4/par_174> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:34+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2024-07-01/par_114b.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_1/par_114b> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:34+00:00",
+  "sha256": "da6048d955c4a3cd2ba5d09f0966be038dec654f03a2646da6a8dbbc9204cf34"
+ },
+ "osr/2024-07-01/par_114b.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2024-07-01/dokument/norma/cast_3/hlava_1/par_114b> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:34+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2025-01-01/citations.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?cit ?f WHERE {\n  VALUES ?cit { \"§ 114b\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 172\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 173\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 174\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 175a\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 195\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 196\"^^<http://www.w3.org/2001/XMLSchema#string> }\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01> <https://slovník.gov.cz/datový/sbírka/pojem/má-fragment-znění> ?f .\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }",
+  "fetched_at": "2026-10-28T09:23:34+00:00",
+  "sha256": "70fed2cb28a722652988f4df607e27e1641db6e69f660a7b8ad5cf0ce5f34a88"
+ },
+ "osr/2025-01-01/par_172.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_4/par_172> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:35+00:00",
+  "sha256": "cbc61537446a1c9a4442354acebd5584f00a3b698012c32ea2f048c11f92ac21"
+ },
+ "osr/2025-01-01/par_172.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:35+00:00",
+  "sha256": "60ed4359f083861e0b0eb72662e15953a6a35da2338fe4f13160af17d6473f0a"
+ },
+ "osr/2025-01-01/par_172.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:35+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2025-01-01/par_173.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_4/par_173> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:35+00:00",
+  "sha256": "5040d6a0987c87a05ad515d3185fe8808b7143b39504e1bb2e50a8c36fbe4c19"
+ },
+ "osr/2025-01-01/par_173.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_4/par_173> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:35+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2025-01-01/par_174.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_4/par_174> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:36+00:00",
+  "sha256": "4590199caeb7f7d919b6138a94728f1f51f5aa8630b0d04875851f7260dd84f0"
+ },
+ "osr/2025-01-01/par_174.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_4/par_174> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:36+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2025-01-01/par_114b.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_1/par_114b> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:36+00:00",
+  "sha256": "7dd47202edb15954cc5a919a6cb270f85c99cc5d9ec6ed1af1fc5249c9763bc8"
+ },
+ "osr/2025-01-01/par_114b.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2025-01-01/dokument/norma/cast_3/hlava_1/par_114b> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:36+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2026-01-01/citations.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?cit ?f WHERE {\n  VALUES ?cit { \"§ 114b\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 172\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 173\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 174\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 175a\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 195\"^^<http://www.w3.org/2001/XMLSchema#string> \"§ 196\"^^<http://www.w3.org/2001/XMLSchema#string> }\n  <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01> <https://slovník.gov.cz/datový/sbírka/pojem/má-fragment-znění> ?f .\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }",
+  "fetched_at": "2026-10-28T09:23:36+00:00",
+  "sha256": "b12f29fed6fd10815060b186ab4916fa18db02bf2f2e4077d827cc685141eff3"
+ },
+ "osr/2026-01-01/par_172.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_172> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:37+00:00",
+  "sha256": "650a53acb2c253846a7f248944650d94cea2d74837d61daa1c6449f7204cbcc6"
+ },
+ "osr/2026-01-01/par_172.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:37+00:00",
+  "sha256": "d9a0781f1c0c079e107082865feadb0d428e982ab22563983fd8165edc5f8db9"
+ },
+ "osr/2026-01-01/par_172.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_172> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:37+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2026-01-01/par_173.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_173> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:37+00:00",
+  "sha256": "99465f534a152a32bafaa456d4f6b474572a53f9042a819d0cff3761c4bfced4"
+ },
+ "osr/2026-01-01/par_173.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_173> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:38+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2026-01-01/par_196.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_5/par_196> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:38+00:00",
+  "sha256": "2b152e1fe66164b316cc4f35e5888fe13bfa0357947a4d53d9c6b9c7c454defc"
+ },
+ "osr/2026-01-01/par_196.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_5/par_196> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:39+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2026-01-01/par_174.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_174> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:39+00:00",
+  "sha256": "1b1fa1913c8b63da56e6ac4fcf4288b5e71de1545ddd37dd8ac875e338d77062"
+ },
+ "osr/2026-01-01/par_174.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_174> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:39+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2026-01-01/par_195.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_5/par_195> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:39+00:00",
+  "sha256": "0a8a5f42fbb2df6c2d3a6950fdc36cd75d1d48fb6a2329c461bba4c11c7a4b21"
+ },
+ "osr/2026-01-01/par_195.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_5/par_195> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:39+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2026-01-01/par_175a.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_175a> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:39+00:00",
+  "sha256": "5ee0f015a111f65459999b8435d44310fd785530a6d442697d92038f44e09489"
+ },
+ "osr/2026-01-01/par_175a.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_175a> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:39+00:00",
+  "sha256": "9c6936bef8e34841a8c2d692ac930ab7aa97563be433d86242ea761d99ea817f"
+ },
+ "osr/2026-01-01/par_175a.d3.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_4/par_175a> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 . ?x2 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x1 .\n  BIND(?x2 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:41+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ },
+ "osr/2026-01-01/par_114b.d1.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_1/par_114b> .\n  BIND(?x0 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:41+00:00",
+  "sha256": "a872fa46abd8a782fc87ca943e0ad45519db2e403479a7ed127f42a3605bb5f1"
+ },
+ "osr/2026-01-01/par_114b.d2.json": {
+  "endpoint": "https://opendata.eselpoint.gov.cz/sparql",
+  "query": "SELECT ?f ?order ?cit ?c ?type ?text WHERE {\n  ?x0 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> <https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/1963/99/2026-01-01/dokument/norma/cast_3/hlava_1/par_114b> . ?x1 <https://slovník.gov.cz/datový/sbírka/pojem/má-předka> ?x0 .\n  BIND(?x1 AS ?f)\n  ?f <https://slovník.gov.cz/datový/sbírka/pojem/obsahuje-fragment> ?c .\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/pořadí-fragmentu-znění-právního-aktu> ?order }\n  OPTIONAL { ?f <https://slovník.gov.cz/datový/sbírka/pojem/citace-označení-fragmentu-znění-právního-aktu> ?cit }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/má-typ-fragmentu> ?type }\n  OPTIONAL { ?c <https://slovník.gov.cz/datový/sbírka/pojem/text-fragmentu> ?text } }",
+  "fetched_at": "2026-10-28T09:23:41+00:00",
+  "sha256": "b8c1bf6aab9caac7788a1e970d4caf147597597c9cebed485f72962f1691b31b"
+ }
+}
