@@ -173,6 +173,8 @@ name = "najem-ai"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "psycopg" },
+    { name = "pytest" },
     { name = "requests" },
 ]
 
@@ -186,7 +188,11 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "requests", specifier = ">=2.34.2" }]
+requires-dist = [
+    { name = "psycopg", specifier = ">=3.3.6" },
+    { name = "pytest", specifier = ">=9.2.0" },
+    { name = "requests", specifier = ">=2.34.2" },
+]
 
 [package.metadata.requires-dev]
 dev = [
