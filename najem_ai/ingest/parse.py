@@ -119,13 +119,12 @@ def build_ranges(versions: list[tuple[date, dict[str, Fragment]]]) -> list[Row]:
     missing from a version, its row ends where that version starts.
     """
     versions = sorted(versions, key=lambda v: v[0])
-    ends = [start for start, _ in versions[1:]] + [
-        None
-    ]  # each version ends where the next starts
+    # each version ends where the next starts; the last one stays open
+    ends = [start for start, _ in versions[1:]] + [None]
     ids = sorted({i for _, fragments in versions for i in fragments})
     rows = []
     for fragment_id in ids:
-        for (start, fragments), end in zip(versions, ends):
+        for (start, fragments), end in zip(versions, ends, strict=True):
             fragment = fragments.get(fragment_id)
             if fragment is None:
                 continue
