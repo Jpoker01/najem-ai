@@ -1,4 +1,5 @@
 """Spike: verify the e-Sbírka SPARQL endpoint returns versions and paragraph text."""
+
 import requests
 
 ENDPOINT = "https://opendata.eselpoint.gov.cz/sparql"
@@ -21,7 +22,9 @@ def sparql(query: str) -> list[dict]:
 versions = sparql(f"""SELECT ?z ?d WHERE {{
   <{ACT}> <{P}má-znění> ?z .
   ?z <{P}účinnost-znění-od> ?d }}""")
-for v in sorted(versions, key=lambda r: r["d"]):  # why: sort in Python; ORDER BY returned 403 earlier
+for v in sorted(
+    versions, key=lambda r: r["d"]
+):  # why: sort in Python; ORDER BY returned 403 earlier
     print(v["d"], v["z"])
 
 # 2) Text of § 5 in two versions (fragment -> content node -> text)

@@ -17,7 +17,7 @@ ELI = "https://opendata.eselpoint.gov.cz/esel-esb/eli/cz/sb/"
 P = "https://slovník.gov.cz/datový/sbírka/pojem/"  # e-Sbírka vocabulary
 XSD_STRING = "http://www.w3.org/2001/XMLSchema#string"
 RAW = Path("data/raw")
-MAX_DEPTH = 8 # 3-4 is necessary, 8 just to be safe
+MAX_DEPTH = 8  # 3-4 is necessary, 8 just to be safe
 
 # versions = the wording in force on 1 Jul 2021 plus every later version in
 # which the in-scope text changed (found on 27 Oct 2026 by diffing all versions)
@@ -123,7 +123,11 @@ def fetch_root(name: str, version: str, label: str, root_iri: str, manifest: dic
     """Save every level below root_iri (one file per depth, up to MAX_DEPTH) and return the total row count."""
     total = 0
     for depth in range(1, MAX_DEPTH + 1):
-        rows = save(RAW / name / version / f"{label}.d{depth}.json", descendants_query(root_iri, depth), manifest)
+        rows = save(
+            RAW / name / version / f"{label}.d{depth}.json",
+            descendants_query(root_iri, depth),
+            manifest,
+        )
         if not rows:
             break  # why: no fragments at this depth means none deeper either
         total += len(rows)
@@ -141,7 +145,11 @@ def main() -> None:
             if "roots" in src:
                 roots = {r.rsplit("/", 1)[1]: f"{version_iri}/{r}" for r in src["roots"]}
             else:
-                rows = save(RAW / name / version / "citations.json", citations_query(version_iri, src["citations"]), manifest)
+                rows = save(
+                    RAW / name / version / "citations.json",
+                    citations_query(version_iri, src["citations"]),
+                    manifest,
+                )
                 roots = {r["f"].rsplit("/", 1)[1]: r["f"] for r in rows}
                 missing = set(src["citations"]) - {r["cit"] for r in rows}
                 if missing:
@@ -150,7 +158,9 @@ def main() -> None:
                 n = fetch_root(name, version, label, root_iri, manifest)
                 print(f"{name} {version} {label}: {n} fragments")
         # why: written after every act so a crash keeps what was already fetched
-        (RAW / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
+        (RAW / "manifest.json").write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8"
+        )
 
 
 if __name__ == "__main__":

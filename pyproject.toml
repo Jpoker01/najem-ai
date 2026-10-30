@@ -35,6 +35,7 @@ target-version = "py314"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]   # pycodestyle, pyflakes, import sorting, pyupgrade, bugbear
+ignore = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

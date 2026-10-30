@@ -26,7 +26,6 @@ jobs:
       - uses: astral-sh/setup-uv@v6
       - run: uv sync
       - name: Load schema
-        # service containers can't mount repo files, so the schema is applied here
         run: psql "$DATABASE_URL" -f db/schema.sql
       - run: make lint
       - run: make test
