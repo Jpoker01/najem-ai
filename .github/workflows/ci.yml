@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      db:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: najemai
+          POSTGRES_PASSWORD: najemai
+          POSTGRES_DB: najemai
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U najemai"
+          --health-interval 2s
+          --health-retries 15
+    env:
+      DATABASE_URL: postgresql://najemai:najemai@localhost:5432/najemai
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+      - name: Load schema
+        # service containers can't mount repo files, so the schema is applied here
+        run: psql "$DATABASE_URL" -f db/schema.sql
+      - run: make lint
+      - run: make test

@@ -1,2 +1,19 @@
 services:
-  
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: najemai
+      POSTGRES_PASSWORD: najemai        # local development only
+      POSTGRES_DB: najemai
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db:/docker-entrypoint-initdb.d:ro   # runs schema.sql on first start
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U najemai" ]
+      interval: 2s
+      retries: 15
+
+volumes:
+  pgdata:
