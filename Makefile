@@ -1,4 +1,4 @@
-.PHONY: lint format test db-up db-down
+.PHONY: lint format test db-up db-down load
 
 lint:            ## Check code style and common bugs
 	uv run ruff check .
@@ -12,7 +12,10 @@ test:            ## Run the test suite
 	uv run pytest
 
 db-up:           ## Start Postgres with pgvector
-	docker compose up -d db
+	docker compose up -d --wait db
+
+load:            ## Parse data/raw/ and load it into the fragment table
+	uv run python -m najem_ai.ingest.load
 
 db-down:
 	docker compose down

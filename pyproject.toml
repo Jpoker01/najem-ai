@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "psycopg>=3.3.6",
+    "psycopg[binary]>=3.3.6",
     "pytest>=9.2.0",
     "requests>=2.34.2",
 ]
@@ -23,7 +23,6 @@ module-root = ""
 [dependency-groups]
 dev = [
     "pre-commit>=4.7.0",
-    "psycopg[binary]>=3.3.6",
     "pytest>=9.2.0",
     "pyyaml>=6.0.3",
     "ruff>=0.17.3",
@@ -40,5 +39,3 @@ ignore = ["E501"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]                    # so tests can import najem_ai without installing it
-
-        # so tests can import najem_ai without installing it
