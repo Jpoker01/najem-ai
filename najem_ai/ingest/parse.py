@@ -114,24 +114,28 @@ def parse_version(law: str, version_dir: Path, scope: set[str]) -> dict[str, Fra
 
 def build_ranges(versions: list[tuple[date, dict[str, Fragment]]]) -> list[Row]:
     """Give each fragment a validity range from a list of (start date, fragments) versions.
-
     A version is valid until the next one starts (the last one stays open). If a fragment
     has the same content in consecutive versions, they are merged into one row; if it is
     missing from a version, its row ends where that version starts.
     """
-    versions = sorted(versions, key=lambda version: version[0])
-    rows: list[Row] = []
-    open_rows: dict[str, Row] = {}  # id -> row started earlier and not yet closed
-    for start, fragments in versions:
-        for fragment_id, row in list(open_rows.items()):
-            if fragments.get(fragment_id) != row.fragment:
-                rows.append(Row(row.fragment, row.valid_from, start))
-                del open_rows[fragment_id]
-        for fragment_id, fragment in fragments.items():
-            if fragment_id not in open_rows:
-                open_rows[fragment_id] = Row(fragment, start, None)
-    rows.extend(open_rows.values())
-    return sorted(rows, key=lambda row: (row.fragment.id, row.valid_from))
+    versions = sorted(versions, key=lambda v: v[0])
+    ends = [start for start, _ in versions[1:]] + [
+        None
+    ]  # each version ends where the next starts
+    ids = sorted({i for _, fragments in versions for i in fragments})
+    rows = []
+    for fragment_id in ids:
+        for (start, fragments), end in zip(versions, ends):
+            fragment = fragments.get(fragment_id)
+            if fragment is None:
+                continue
+            last = rows[-1] if rows else None
+            # same text continuing straight on: extend the previous row instead of adding one
+            if last and last.fragment == fragment and last.valid_to == start:
+                rows[-1] = Row(fragment, last.valid_from, end)
+            else:
+                rows.append(Row(fragment, start, end))
+    return rows
 
 
 def parse_law(law: str, scope: set[str], raw: Path = RAW) -> list[Row]:
